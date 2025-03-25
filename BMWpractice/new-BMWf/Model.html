@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alle BMW Model </title>
+    <link rel="stylesheet" href="css/General.css">
+    <link rel="stylesheet" href="Model.css">
+    <link rel="stylesheet" href="media-query/media-query.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+
+<!-------------------------------NAVIGATION---------------------------------------->
+<nav>
+
+    <div class="left-section">
+        <a>
+            <a href="http://127.0.0.1:5500/index.html ">
+                <span>
+                     <img class="logo-1" src="img/BMW_White_Logo.svg.asset.1670245093434.svg" alt="BMW LOGO">
+                </span>
+            </a>
+
+        </a>
+    </div>
+    <div class="middle-section" >
+        <ul>
+            <li>
+                <a href="http://127.0.0.1:5500/Model.html">
+                    <span class="first-button">Modelle</span>
+                </a>
+            </li>
+            <li>
+                <button class="menu-item secound-button">
+                    <span>Elektrofahrzeuge</span>
+
+                </button>
+            </li>
+            <li>
+                <a href="https://www.bmw.de/de/konfigurator.html">
+                    <span class="third-button">Konfigurator</span>
+                </a>
+            </li>
+            <li>
+                <button style="width: 200px" >
+                    <span class="fourth-button">Online Kaufen</span>
+                </button>
+            </li>
+            <li>
+                <button style="width: 110px" >
+                    <span class="last-button">Mehr BMW</span>
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="right-section">
+        <ul>
+            <li>
+                <button>
+                    <i class="fa fa-regular fa-user" ></i>
+                </button>
+
+            </li>
+            <li>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-location-dot"></i>
+            </li>
+            <li>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </li>
+            <li>
+                <i class="fa-solid fa-bars" id="burger-menubm" onclick="openSidebar()" ></i>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="line-1"></div>
+
+<!------------------------------------side-bar--------->
+
+<div id="mySidebar"  class="sidebar">
+     <button onclick="closeSidebar()">close</button>
+
+
+</div>
+
+
+<!-------------------------MAIN DIV--------------------------------->
+
+<div class="main-div">
+<div class="div-h1">
+    <h1>  WÄHLEN SIE EIN BMW MODELL. </h1>
+</div>
+    <P class="filter">FILTER</P>
+    <div class="btn1-container">
+        <button><i class="fa-solid fa-plus"></i>Plug-in-Hybrid</button>
+        <button><i class="fa-solid fa-plus"></i>Vollelektrisch</button>
+        <button><i class="fa-solid fa-plus"></i>BMW M</button>
+        <button><i class="fa-solid fa-plus"></i>BMW i</button>
+        <button><i class="fa-solid fa-plus"></i>Neu</button>
+    </div>
+    <div  id="mehrFilter1">  <button class="mehr-filter" onclick="openOverlay()"> >Mehr Filter anzeigen</button>  </div>
+
+        <div class="newoverlay"  id="overlay" >
+            <button style="background-color: black; height: 300px" class="closebtnnn"  onclick="closeOverly()" >
+                <i class="fa-solid fa-x"></i>
+
+            </button>
+
+        </div>
+
+
+
+
+    <div><p style="color: #504d4d"><span style="text-decoration: underline; color:  #504d4d">130</span> Fahrzeuge gefunden</p></div>
+    <div class="btn2-container">
+
+        <ul >
+           <li>
+               <a href="#model-bmwi">
+                   <button>BMWi</button>
+               </a>
+               </li>
+             <li>
+                 <a href="#model-x">
+                     <button>X</button>
+                 </a>
+                 </li>
+             <li>
+
+                 <a href="#model-m">
+                     <button>M</button>
+                 </a>
+
+
+
+             </li>
+           <li>
+
+              <a>
+                  <button>8</button>
+
+              </a>
+                </li>
+           <li>
+              <a>
+                  <button>7</button>
+
+              </a>
+
+              </li>
+           <li>
+
+               <a>
+                   <button>6</button>
+               </a></li>
+            <li>
+
+                <a>
+                    <button>5</button>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <button>4</button>
+                </a>
+                </li>
+            <li>
+
+                <a>
+                    <button>3</button>
+                </a> </li>
+            <li>
+                <a>
+                    <button>2</button>
+                </a>
+
+               </li>
+             <li>
+                 <a>
+                     <button>1</button>
+                 </a>
+
+                </li>
+            <li>
+                <a>
+                    <button>Z4</button>
+                </a>
+                 </li>
+             <li>
+
+                 <a>
+                     <button style="width: 150px">Plug-in-Hybrid</button>
+                 </a>
+                </li>
+            <li>
+                <a>
+                    <button style="width: 140px">Concept Cars</button>
+
+                </a>
+               </li>
+             <li>
+                 <a>
+                     <button style="width: 185px">Protection Vehicle</button>
+                 </a>
+
+                </li>
+
+        </ul>
+
+
+        <div  class="btn-greater-than" >
+            <button>
+
+                <i class="fa-solid fa-greater-than"></i>
+            </button>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="line-2"></div>
+
+
+    <!-----------------burger menue-------------------------------------->
+    <div class="burger-menu" id="burger-menuM">
+        <img src="img/BMW_White_Logo.svg.asset.1670245093434.svg">
+        <ul>
+            <li>
+                <span>Modelle</span>
+                <button> > </button>
+            </li>
+
+            <li>
+                <span>Elektrofahrzeuge</span>
+                <button> > </button>
+            </li>
+
+
+            <li>
+                <span>Konfigurator</span>
+                <button> > </button>
+            </li>
+
+
+            <li>
+                <span>Online Kaufen</span>
+                <button> > </button>
+            </li>
+
+
+            <li>
+                <span>Mehr BMW</span>
+                <button> > </button>
+            </li>
+
+        </ul>
+    </div>
+
+
+    <!-----------------------------------CHAT--------------------------->
+
+    <div class="chatButton"  id="chatButton" >
+        <button><i class="fa-solid fa-comments comment "  id="icon" ></i></button>
+    </div>
+
+    <div class="chatWindow" id="chatWindow">
+        <ul>
+            <li>
+                <span>FAQ</span>
+            </li>
+
+            <li>
+                <span>Chat</span>
+            </li>
+            <li>
+                <span>Kontakt</span>
+            </li>
+        </ul>
+
+    </div>
+
+    <div>
+        <button class="scrollToTopBtn"  id="scrollToTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
+
+    </div>
+
+
+    <!-----------------------------------MODELS--------------------------------->
+
+    <div class="bmwi">
+        <p id="model-bmwi">BMW i</p>
+    </div>
+<div  id="maincontainer" class="maincontainer">
+<div class="main-part" >
+
+    <div class="div1">
+        <div class="pic1">
+        </div>
+        <div class="under-pic">
+            <img class="logo-under-pics" src="img/BMW_i_100px.png.asset.1583221945801.png" alt="bmws car">
+            <button class="btn-1">BMW iX</button>
+            <button class="btn-2">Vollelektrisch</button>
+            <button class="btn-3">ab 77.300,00 $* </button>
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+    <div class="div2">
+        <div class="pic2">
+        </div>
+        <div class="under-pic">
+            <img class="logo-under-pics" src="img/BMW_i_100px.png.asset.1583221945801.png" alt="bmws car" >
+            <button class="btn-1">BMW iX</button>
+            <button class="btn-2">Vollelektrisch</button>
+            <button class="btn-3">ab 77.300,00 $* </button>
+        </div>
+
+    </div>
+
+    <div class="div3">
+        <div class="pic3">
+        </div>
+        <div class="under-pic" >
+            <img class="logo-under-pics" src="img/BMW_i_100px.png.asset.1583221945801.png"  alt="bmws car" >
+            <button class="btn-1">BMW iX</button>
+            <button class="btn-2">Vollelektrisch</button>
+            <button class="btn-3">ab 77.300,00 $* </button>
+        </div>
+
+    </div>
+
+    <div class="div4">
+        <div class="pic4">
+        </div>
+        <div  class="under-pic">
+            <img class="logo-under-pics" src="img/BMW_i_100px.png.asset.1583221945801.png" alt="bmws car"  >
+            <button class="btn-1">BMW iX</button>
+            <button class="btn-2">Vollelektrisch</button>
+            <button class="btn-3">ab 77.300,00 $* </button>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+    <div class="main-part">
+        <div class="div1">
+            <div class="pic1">
+            </div>
+            <div  class="under-pic" >
+                <img class="logo-under-pics" src="img/BMW_i_100px.png.asset.1583221945801.png" alt="bmws car" >
+                <button class="btn-1">BMW iX</button>
+                <button class="btn-2">Vollelektrisch</button>
+                <button class="btn-3">ab 77.300,00 $* </button>
+            </div>
+        </div>
+        <div class="div2">
+            <div class="pic2">
+            </div>
+            <div class="under-pic" >
+                <img class="logo-under-pics" src="img/BMW_i_100px.png.asset.1583221945801.png" alt="bmws car" >
+                <button class="btn-1">BMW iX</button>
+                <button class="btn-2">Vollelektrisch</button>
+                <button class="btn-3">ab 77.300,00 $* </button>
+            </div>
+        </div>
+        <div class="div3">
+            <div class="pic3">
+            </div>
+            <div class="under-pic" >
+                <img class="logo-under-pics" src="img/BMW_i_100px.png.asset.1583221945801.png" alt="bmws car" >
+                <button class="btn-1">BMW iX</button>
+                <button class="btn-2">Vollelektrisch</button>
+                <button class="btn-3">ab 77.300,00 $* </button>
+            </div>
+        </div>
+        <div class="div4">
+            <div class="pic4">
+            </div>
+            <div class="under-pic"  >
+                <img class="logo-under-pics" src="img/BMW_i_100px.png.asset.1583221945801.png"   alt="bmws car" >
+                <button class="btn-1">BMW iX</button>
+                <button class="btn-2">Vollelektrisch</button>
+                <button class="btn-3">ab 77.300,00 $* </button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="main-part">
+        <div class="div1">
+            <div class="pic1">
+            </div>
+            <div  class="under-pic">
+                <img class="logo-under-pics" src="img/BMW_i_100px.png.asset.1583221945801.png"  alt="bmws car" >
+                <button class="btn-1">BMW iX</button>
+                <button class="btn-2">Vollelektrisch</button>
+                <button class="btn-3">ab 77.300,00 $* </button>
+            </div>
+        </div>
+        <div class="div2">
+            <div class="pic2">
+            </div>
+            <div class="under-pic" >
+                <img class="logo-under-pics" src="img/BMW_i_100px.png.asset.1583221945801.png"  alt="bmws car" >
+                <button class="btn-1">BMW iX</button>
+                <button class="btn-2">Vollelektrisch</button>
+                <button class="btn-3">ab 77.300,00 $* </button>
+            </div>
+        </div>
+        <div class="div3">
+            <div class="pic3">
+            </div>
+            <div class="under-pic" >
+                <img class="logo-under-pics" src="img/BMW_i_100px.png.asset.1583221945801.png"  alt="bmws car">
+                <button class="btn-1">BMW iX</button>
+                <button class="btn-2">Vollelektrisch</button>
+                <button class="btn-3">ab 77.300,00 $* </button>
+            </div>
+        </div>
+        <div class="div4">
+            <div class="pic4">
+
+            </div>
+            <div class="under-pic" >
+                <img class="logo-under-pics" src="img/BMW_i_100px.png.asset.1583221945801.png"  alt="bmws car" >
+                <button class="btn-1">BMW iX</button>
+                <button class="btn-2">Vollelektrisch</button>
+                <button class="btn-3">ab 77.300,00 $* </button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bmwi">
+
+            <p id="model-x">X</p>
+
+    </div>
+
+
+    <div class="main-part">
+        <div class="div1">
+            <div class="pic1">
+            </div>
+            <div class="under-pic" >
+                <img class="logo-under-pics" src="img/BMW_i_100px.png.asset.1583221945801.png" alt="bmws car" >
+                <button class="btn-1">BMW iX</button>
+                <button class="btn-2">Vollelektrisch</button>
+                <button class="btn-3">ab 77.300,00 $* </button>
+            </div>
+        </div>
+        <div class="div2">
+            <div class="pic2">
+            </div>
+            <div class="under-pic" >
+                <img class="logo-under-pics" src="img/BMW_i_100px.png.asset.1583221945801.png" alt="bmws car"  >
+                <button class="btn-1">BMW iX</button>
+                <button class="btn-2">Vollelektrisch</button>
+                <button class="btn-3">ab 77.300,00 $* </button>
+            </div>
+        </div>
+        <div class="div3">
+            <div class="pic3">
+            </div>
+            <div  class="under-pic">
+                <img class="logo-under-pics" src="img/BMW_i_100px.png.asset.1583221945801.png"  alt="bmws car" >
+                <button class="btn-1">BMW iX</button>
+                <button class="btn-2">Vollelektrisch</button>
+                <button class="btn-3">ab 77.300,00 $* </button>
+            </div>
+        </div>
+        <div class="div4">
+            <div class="pic4">
+            </div>
+            <div class="under-pic" >
+                <img class="logo-under-pics" src="img/BMW_i_100px.png.asset.1583221945801.png"  alt="bmws car" >
+                <button class="btn-1">BMW iX</button>
+                <button class="btn-2">Vollelektrisch</button>
+                <button class="btn-3">ab 77.300,00 $* </button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main-part">
+        <div class="div1">
+            <div class="pic1 " style="background-color: #0a53be">
+            </div>
+            <div  class="under-pic">
+                <img class="logo-under-pics" src="img/BMW_i_100px.png.asset.1583221945801.png"  alt="bmws car" >
+                <button class="btn-1">BMW iX</button>
+                <button class="btn-2">Vollelektrisch</button>
+                <button class="btn-3">ab 77.300,00 $* </button>
+            </div>
+        </div>
+        <div class="div2">
+            <div class="pic2">
+            </div>
+            <div class="under-pic" >
+                <img class="logo-under-pics" src="img/BMW_i_100px.png.asset.1583221945801.png" alt="bmws car"  >
+                <button class="btn-1">BMW iX</button>
+                <button class="btn-2">Vollelektrisch</button>
+                <button class="btn-3">ab 77.300,00 $* </button>
+            </div>
+        </div>
+        <div class="div3">
+            <div class="pic3">
+            </div>
+            <div class="under-pic">
+                <img class="logo-under-pics" src="img/BMW_i_100px.png.asset.1583221945801.png"     alt="bmws car">
+                <button class="btn-1">BMW iX</button>
+                <button class="btn-2">Vollelektrisch</button>
+                <button class="btn-3">ab 77.300,00 $* </button>
+        </div>
+        </div>
+        <div class="div4">
+            <div class="pic4">
+
+            </div>
+
+            <div class="under-pic" >
+                <img class="logo-under-pics" src="img/BMW_i_100px.png.asset.1583221945801.png"    alt="bmws car">
+                <button class="btn-1">BMW iX</button>
+                <button class="btn-2">Vollelektrisch</button>
+                <button class="btn-3">ab 77.300,00 $* </button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main-part">
+        <div class="div1">
+            <div class="pic1">
+            </div>
+            <div class="under-pic" >
+                <img class="logo-under-pics" src="img/BMW_i_100px.png.asset.1583221945801.png"  alt="bmws car">
+                <button class="btn-1">BMW iX</button>
+                <button class="btn-2">Vollelektrisch</button>
+                <button class="btn-3">ab 77.300,00 $* </button>
+            </div>
+        </div>
+        <div class="div2">
+            <div class="pic2">
+            </div>
+            <div class="under-pic" >
+                <img class="logo-under-pics" src="img/BMW_i_100px.png.asset.1583221945801.png"  alt="bmws car">
+                <button class="btn-1">BMW iX</button>
+                <button class="btn-2">Vollelektrisch</button>
+                <button class="btn-3">ab 77.300,00 $* </button>
+            </div>
+        </div>
+        <div class="div3">
+            <div class="pic3">
+            </div>
+            <div class="under-pic" >
+                <img class="logo-under-pics" src="img/BMW_i_100px.png.asset.1583221945801.png"  alt="bmws car">
+                <button class="btn-1">BMW iX</button>
+                <button class="btn-2">Vollelektrisch</button>
+                <button class="btn-3">ab 77.300,00 $* </button>
+            </div>
+        </div>
+        <div class="div4">
+            <div class="pic4">
+            </div>
+            <div class="under-pic" >
+                <img class="logo-under-pics" src="img/BMW_i_100px.png.asset.1583221945801.png"  alt="bmws car">
+                <button class="btn-1">BMW iX</button>
+                <button class="btn-2">Vollelektrisch</button>
+                <button class="btn-3">ab 77.300,00 $* </button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <div class="bmwi">
+        <p id="model-m">M</p>
+    </div>
+    <div class="main-part">
+        <div class="div1">
+            <div class="pic1">
+            </div>
+            <div class="under-pic" >
+                <img class="logo-under-pics" src="img/BMW_i_100px.png.asset.1583221945801.png"   alt="bmws car">
+                <button class="btn-1">BMW iX</button>
+                <button class="btn-2">Vollelektrisch</button>
+                <button class="btn-3">ab 77.300,00 $* </button>
+            </div>
+        </div>
+        <div class="div2">
+            <div class="pic2">
+            </div>
+            <div  class="under-pic">
+                <img class="logo-under-pics" src="img/BMW_i_100px.png.asset.1583221945801.png" alt="bmws car">
+                <button class="btn-1">BMW iX</button>
+                <button class="btn-2">Vollelektrisch</button>
+                <button class="btn-3">ab 77.300,00 $* </button>
+            </div>
+        </div>
+        <div class="div3">
+            <div class="pic3">
+            </div>
+            <div   class="under-pic">
+                <img class="logo-under-pics" src="img/BMW_i_100px.png.asset.1583221945801.png" alt="bmws car">
+                <button class="btn-1">BMW iX</button>
+                <button class="btn-2">Vollelektrisch</button>
+                <button class="btn-3">ab 77.300,00 $* </button>
+            </div>
+        </div>
+        <div class="div4">
+            <div class="pic4">
+
+            </div>
+            <div class="under-pic" >
+                <img class="logo-under-pics" src="img/BMW_i_100px.png.asset.1583221945801.png" alt="bmws car">
+                <button class="btn-1">BMW iX</button>
+                <button class="btn-2">Vollelektrisch</button>
+                <button class="btn-3">ab 77.300,00 $* </button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main-part">
+        <div class="div1">
+            <div class="pic1">
+            </div>
+            <div  class="under-pic" >
+                <img class="logo-under-pics" src="img/BMW_i_100px.png.asset.1583221945801.png" alt="bmws car">
+                <button class="btn-1">BMW iX</button>
+                <button class="btn-2">Vollelektrisch</button>
+                <button class="btn-3">ab 77.300,00 $* </button>
+            </div>
+        </div>
+        <div class="div2">
+            <div class="pic2">
+            </div>
+            <div  class="under-pic">
+                <img class="logo-under-pics" src="img/BMW_i_100px.png.asset.1583221945801.png" alt="bmws car">
+                <button class="btn-1">BMW iX</button>
+                <button class="btn-2">Vollelektrisch</button>
+                <button class="btn-3">ab 77.300,00 $* </button>
+            </div>
+        </div>
+        <div class="div3">
+            <div class="pic3">
+            </div>
+            <div class="under-pic" >
+                <img class="logo-under-pics" src="img/BMW_i_100px.png.asset.1583221945801.png" alt="bmws car">
+                <button class="btn-1">BMW iX</button>
+                <button class="btn-2">Vollelektrisch</button>
+                <button class="btn-3">ab 77.300,00 $* </button>
+            </div>
+        </div>
+        <div class="div4">
+            <div class="pic4">
+            </div>
+            <div class="under-pic" >
+                <img class="logo-under-pics" src="img/BMW_i_100px.png.asset.1583221945801.png" alt="bmws car">
+                <button class="btn-1">BMW iX</button>
+                <button class="btn-2">Vollelektrisch</button>
+                <button class="btn-3">ab 77.300,00 $* </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-part">
+        <div class="div1">
+            <div class="pic1">
+            </div>
+
+            <div class="under-pic" >
+                <img class="logo-under-pics" src="img/BMW_i_100px.png.asset.1583221945801.png" alt="bmws car">
+                <button class="btn-1">BMW iX</button>
+                <button class="btn-2">Vollelektrisch</button>
+                <button class="btn-3">ab 77.300,00 $* </button>
+            </div>
+        </div>
+
+        <div class="div2">
+            <div class="pic2">
+            </div>
+            <div class="under-pic" >
+                <img class="logo-under-pics" src="img/BMW_i_100px.png.asset.1583221945801.png" alt="bmws car">
+                <button class="btn-1">BMW iX</button>
+                <button class="btn-2">Vollelektrisch</button>
+                <button class="btn-3">ab 77.300,00 $* </button>
+            </div>
+        </div>
+
+        <div class="div3">
+            <div class="pic3">
+            </div>
+
+            <div  class="under-pic">
+                <img class="logo-under-pics" src="img/BMW_i_100px.png.asset.1583221945801.png" alt="bmws car">
+                <button class="btn-1">BMW iX</button>
+                <button class="btn-2">Vollelektrisch</button>
+                <button class="btn-3">ab 77.300,00 $* </button>
+            </div>
+
+        </div>
+        <div class="div4">
+            <div class="pic4">
+            </div>
+
+            <div class="under-pic" >
+                <img class="logo-under-pics" src="img/BMW_i_100px.png.asset.1583221945801.png" alt="bmws car">
+                <button class="btn-1">BMW iX</button>
+                <button class="btn-2">Vollelektrisch</button>
+                <button class="btn-3">ab 77.300,00 $* </button>
+            </div>
+        </div>
+
+    </div>
+    <div class="media-page">
+        <div>
+            <img >
+
+        </div>
+        <div class="media-box">
+            <div><button>mmmmm</button></div>
+            <div><button>mmmmm</button></div>
+            <div><button>mmmmm</button></div>
+            <div><button>mmmmm</button></div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+    <p style="margin-top: 10px">
+        * Bei den Preisangaben handelt es sich um unverbindliche Empfehlungen des Herstellers inkl. 19 % MwSt. und exklusive Überführungskosten. Änderungen und Irrtümer vorbehalten. Umfänge und Kombinationsmöglichkeiten können variieren. Verbindliche Auskünfte gibt Ihnen gern Ihr BMW Partner.
+
+    </p>
+
+    <div class="bmw-container">
+        <h1 style="margin-top: 100px">
+            ALLE BMW BAUREIHEN.
+
+        </h1>
+
+        <div class="top-of-footer">
+            <div class="left-m">
+                <button>BMW 1er</button>
+                <button> > </button>
+
+            </div>
+            <div class="middle-m">
+                <button>BMW 1er</button>
+                <button> > </button>
+            </div>
+            <div class="right-m">
+                <button>BMW 1er</button>
+                <button> > </button>
+
+            </div>
+        </div>
+
+        <div class="top-of-footer">
+            <div class="left-m">
+                <button>BMW 1er</button>
+                <button> > </button>
+
+
+            </div>
+            <div class="middle-m">
+                <button>BMW 1er</button>
+                <button> > </button>
+
+            </div>
+            <div class="right-m">
+                <button>BMW 1er</button>
+                <button> > </button>
+
+            </div>
+        </div>
+
+
+        <div class="top-of-footer">
+            <div class="left-m">
+                <button>BMW 1er</button>
+                <button> > </button>
+
+
+            </div>
+            <div class="middle-m">
+                <button>BMW 1er</button>
+                <button> > </button>
+
+            </div>
+            <div class="right-m">
+                <button>BMW 1er</button>
+                <button> > </button>
+
+            </div>
+        </div>
+
+
+
+        <div class="top-of-footer">
+            <div class="left-m">
+                <button>BMW 1er</button>
+                <button> > </button>
+
+
+            </div>
+            <div class="middle-m">
+                <button>BMW 1er</button>
+                <button> > </button>
+
+            </div>
+            <div class="right-m">
+                <button>BMW 1er</button>
+                <button> > </button>
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+    <h1 style="margin-top: 100px;">
+
+        ALLE BMW BAUREIHEN.
+
+
+
+    </h1>
+
+    <div class="left-m2">
+        <button>BMW 1er</button>
+        <button> > </button>
+
+    </div>
+
+
+</div>
+
+
+<div class="top-footer">
+    <p class="p-topfppter">
+        WÄHLEN SIE EIN BMW MODELL
+    </p>
+    <button class="alle-modelle">Alle Modelle</button>
+
+
+</div>
+
+
+    <!-----------------------------------FOOTER-------------------------------------->
+
+
+
+    <div class="footer">
+
+
+        <div class="footer-left" >
+            <ul class="second-ul">
+                <p>KONTAKT</p>
+                <li><a><span>Kundenbetreuung</span></a></li>
+                <li><a><span>BMW partner finden</span></a></li>
+                <li><a><span>probefahrt vereinbaren</span></a></li>
+                <li><a><span>Online Genius (FAQ)</span></a></li>
+
+            </ul>
+            <div>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+
+        </div>
+
+
+        <div class="footer-right" >
+            <ul class="second-ul">
+                <p> ÜBER BMW</p>
+                <li><a><span>Unternehmen</span></a></li>
+                <li><a><span>Karriere</span></a></li>
+                <li><a><span>BMW.com</span></a></li>
+                <li><a><span>BMW Group</span></a></li>
+
+            </ul>
+            <div>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+<!---------------------------------last-container-------------------------------->
+<div class="last-container">
+
+    <div class="left-2" >© BMW AG 2024</div>
+
+    <div class="right-2">
+        <button>Impressum</button>
+        <button>Datenschutz</button>
+        <button>Rechtlicher Hinweis</button>
+        <button>Cookies</button>
+        <button >Gesetz über digitale Dienste</button>
+
+    </div>
+
+
+</div>
+
+
+
+
+<!------------------------------------SCRIPT------------------------------------->
+
+
+
+<script src="modele.js"></script>
+</body>
+</html>

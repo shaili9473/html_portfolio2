@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Offizielle BMW DE Website: Premium Fahrzeuge & Innovation</title>
+    <link rel="stylesheet" href="css/General.css">
+    <link  rel="stylesheet" href="style.css" >
+    <link rel="Model-BMW" href="Model.html">
+
+    <link rel="stylesheet" href="media-query/media-query.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+<!----------------------------NAVIGATION-1------------------------------------>
+
+<body>
+<nav>
+    <div class="left-section">
+        <a href="http://127.0.0.1:5501/index.html">
+            <img class="logo-1" src="img/BMW_White_Logo.svg.asset.1670245093434.svg" alt="BMW LOGO">
+        </a>
+  </div>
+    <div class="middle-section" >
+            <ul class="first-ul">
+                <li>
+                    <a href="http://127.0.0.1:5501/Model.html">
+                        <span class="first-button">Modelle</span>
+                    </a>
+                </li>
+                <li>
+                    <button class="menu-item secound-button">
+                        <span>Elektrofahrzeuge</span>
+
+                    </button>
+                </li>
+                <li>
+                    <a href="https://www.bmw.de/de/konfigurator.html">
+                     <span class="third-button">Konfigurator</span>
+                    </a>
+                </li>
+                <li>
+                    <button style="width: 200px" >
+                        <span class="fourth-button" >Online Kaufen</span>
+                    </button>
+                </li>
+                <li>
+                    <button style="width: 110px">
+                        <span class="last-button">Mehr BMW</span>
+                    </button>
+                </li>
+            </ul>
+    </div>
+
+    <div class="right-section">
+        <ul class="first-ul">
+            <li>
+                <button>
+                    <i class="fa fa-regular fa-user" ></i>
+                </button>
+
+            </li>
+            <li>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </li>
+
+            <li>
+                <i class="fa-solid fa-location-dot"></i>
+            </li>
+            <li>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </li>
+            <li>
+                <i class="fa-solid fa-bars" id="burger-menubm" onclick="openSidebar()" ></i>
+            </li>
+        </ul>
+    </div>
+    <div class="background-picture"></div>
+</nav>
+
+<div class="line-1"></div>
+<div>
+    <p class="note"><strong>Freude</strong> am Fahren </p>
+</div>
+
+<div class="bmw-automobile">
+    <h1>Mit Hingabe gebaut.</h1>
+    <h2>Die exklusiven BMW Automobile.</h2>
+    <button class="entdecken">Jetzt entdecken</button>
+</div>
+<!------------------------------------side-bar--------->
+
+<div id="mySidebar"  class="sidebar">
+    <button onclick="closeSidebar()">close</button>
+
+</div>
+
+<!---------------------------CONTAINER 2--------------------------------->
+
+
+<div class="container-2">
+    <p class="part2-p">Finden Sie Ihren BMW.</p>
+    <div class="secound-part">
+        <div class="div1">
+            <i class="fa-solid fa-car"></i>
+            <p class="part3-p">Verfügbare<br> Neuwagen.</p>
+            <button class="part3-btn">Neuwagen suchen</button>
+        </div>
+        <div class="div2">
+            <i class="fa-solid fa-car"></i>
+            <p class="part3-p">Verfügbare <br>Gebrauchtwagen.</p>
+            <button class="part3-btn">Gebrauchtwagen suchen</button>
+        </div>
+        <div class="div3">
+            <i class="fa-solid fa-car"></i>
+            <p class="part3-p">Fahrzeug <br>konfigurieren.</p>
+            <button class="part3-btn"> Konfigurieren & Preise</button>
+        </div>
+
+        <div class="div4">
+            <i class="fa-regular fa-comment"></i>
+            <p class="part3-p">Probefahrt<br> vereinbaren.</p>
+            <button class="part3-btn">Probefahrt vereinbaren</button>
+        </div>
+
+    </div>
+
+    <!-----------------------------------CHAT--------------------------->
+
+    <div class="chatButton"  id="chatButton"  >
+           <button><i class="fa-solid fa-comments comment "  id="icon" ></i></button>
+    </div>
+
+    <div class="chatWindow" id="chatWindow">
+       <ul>
+           <li>
+               <span>FAQ</span>
+           </li>
+
+           <li>
+               <span>Chat</span>
+           </li>
+
+
+           <li>
+               <span>Kontakt</span>
+           </li>
+       </ul>
+
+    </div>
+
+
+<!----------------------------------CONTAINER 3--------------------------------->
+
+
+      <div class="container-3">
+        <div class="overlay-text3-1">
+            <p class="container-3p1" >The New 1</p>
+            <p class="container-3p2">Der neue BMW1er.</p>
+        </div>
+        <div class="overlay-text3-2">
+            <p class="container-3p3" >Ab 349&euro;</p>
+            <p class="container-3p4">Im Monat leasen.<sup>1</sup></p>
+            <p class="container-3p5">Exklusiv für Gewerbekunden.</p>
+            <button class="container-3btn1">Angebot anfordern</button>
+            <button class="container-3btn2">Mehr erfahren</button>
+        </div>
+      </div>
+</div>
+
+
+<!----------------------------TEXT-under-container-3------------------------------->
+
+<div>
+    <p style="color: #939292; margin-left: 57px; margin-right:67px"><sup>1</sup>&nbsp;Unverb. Leasingbeispiel der BMW Bank GmbH für&nbsp;Gewerbekunden. Alle Preise zzgl. der gegebenenfalls gesetzlich anfallenden Umsatzsteuer. Anschaffungspreis 27.676,55 EUR, Leasingsonderzahlung: 0,00 EUR, Laufleistung p. a.: 10.000km, Laufzeit: 36 Monate, 36 monatliche Leasingraten á: 349,00 EUR, Gesamtpreis: 12.564,00 EUR.</p>
+    <p style="cursor: pointer; margin-left: 57px"><u>Mehr-erfahren</u></p>
+    <p style="margin-left: 57px;"> BMW 120: Energieverbrauch kombiniert: 5,3 l/100 km (WLTP); CO2-Emissionen: 121 g/km (WLTP); CO2-Klasse: D; Leistung: 125 kW (170 PS); Hubraum: 1.499 cm³; Kraftstoff: Benzin </p>
+</div>
+
+<!-------------------------------CONTAINER-4-------------------------------------->
+
+<div class="container-4">
+    <div class="overlay-text4-1">
+        <img  class="logo-2" src="img/BMW_i_100px.png.asset.1583221945801.png" alt="logo">
+        <p class="p4">Jetzt zu attraktiven Konditionen monatlich leasen.</p>
+        <p >Die BMW Elektrofahzeugflotte.</p>
+        <button class="container-4btn1">Angebot anfordern</button>
+        <button class="container-4btn2" >Angebote Gewerbekunden</button>
+
+    </div>
+<div class="gradient"></div>
+
+</div>
+
+
+<!----------------------------container-5------------------------------------------->
+
+
+<div class="container-5">
+    <div class="left-side" >
+        <img class="last-picture" src="img/BMW_M_Performancev2_3to2.webp" alt="bmw-pictures">
+        <p class="container-5p1">
+            Verbrauch und CO₂-Emissionen
+        </p>
+        <p class="container-5p2">
+            BMW M4 Coupé: Energieverbrauch kombiniert: 10,1–10,0 l/100 km (WLTP); CO2-Emissionen kombiniert: 230–228 g/km (WLTP); CO2-Klasse(n): G <br>
+            BMW i5 M60 xDrive Limousine: Energieverbrauch kombiniert: 20,5 kWh/100 km (WLTP); CO₂-Emissionen kombiniert: 0 g/km (WLTP); CO₂-Klasse(n): A <br>
+            BMW i4 M50 xDrive Gran Coupé: Energieverbrauch kombiniert: 21,9 kWh/100 km (WLTP); CO₂-Emissionen kombiniert: 0 g/km (WLTP); CO₂-Klasse(n): A <br>
+        </p>
+    </div>
+    <div class="right-side">
+        <p class="container-5p3">Made to express.</p>
+        <p class="container-5p4">
+            BMW M Performance Parts<br>
+            Erhältlich für das neue BMW M4 Coupé und viele weitere Modelle. Für mehr<br>
+            Motorsport-Feeling abseits der Rennstrecke.
+        </p>
+        <button class="container-5btn1" >
+            Mehr entdecken  <span >&gt </span>
+        </button>
+    </div>
+
+</div>
+
+
+<!--------------------------------TOP OF FOOTER---------------------------------------->
+
+
+<hr style="width: 100% ; color: #f3efef; font-size: 2px">
+
+
+<div class="top-of-footer">
+    <p class="top-footer-p">
+        WÄHLEN SIE EIN BMW MODELL
+    </p>
+    <button class="top-footer-btn">  Alle Modell </button>
+</div>
+
+
+<!-----------------------CONTAINER-6------------------------------------------>
+
+<div class="footer">
+
+    <div class="footer-left">
+        <ul class="second-ul">
+            <p>KONTAKT</p>
+            <li><a><span>Kundenbetreuung</span></a></li>
+            <li><a><span>BMW partner finden</span></a></li>
+            <li><a><span>probefahrt vereinbaren</span></a></li>
+            <li><a><span>Online Genius (FAQ)</span></a></li>
+
+        </ul>
+        <div>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+
+    </div>
+
+    <div class="footer-right">
+        <ul class="second-ul">
+            <p> ÜBER BMW</p>
+            <li><a><span>Unternehmen</span></a></li>
+            <li><a><span>Karriere</span></a></li>
+            <li><a><span>BMW.com</span></a></li>
+            <li><a><span>BMW Group</span></a></li>
+
+        </ul>
+        <div>
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!----------------------------------CONTAINER-7--------------------------------------->
+
+<div class="last-container">
+
+    <div class="left-2" >© BMW AG 2024</div>
+
+    <div class="right-2">
+        <button>Impressum</button>
+        <button>Datenschutz</button>
+        <button>Rechtlicher Hinweis</button>
+        <button>Cookies</button>
+        <button >Gesetz über digitale Dienste</button>
+
+    </div>
+
+</div>
+
+<!--------------------------------SCRIPT------------------------------------->
+
+<script src="modele.js"></script>
+
+
+</body>
+
+</html>
