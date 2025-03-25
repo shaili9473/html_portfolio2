@@ -1,0 +1,35 @@
+<html lang="en">
+
+<body>
+
+    <form action="piggy_bank_launcher.php" method="post">
+        <img src="/images/piggy_bank-<?= $mood ?>.png"/>
+        <br>
+        <br>
+        <strong>Piggy Bank</strong>
+        <br>
+        <br>
+        <?= $output ?>
+        <br>
+        <label for="euro">Insert Euro:</label>
+        <input type="number" id="euro" name="euro" min="0" value="">
+        <br>
+        <br>
+        <label for="cent">Insert Cent:</label>
+        <input type="number" id="cent" name="cent" min="0" value="">
+        <br>
+        <br>
+        <label for="spendEuro">Spend Euro:</label>
+        <input type="number" id="spendEuro" name="spendEuro" min="0" value="">
+        <br>
+        <br>
+        <label for="spendCent">Spend Cent:</label>
+        <input type="number" id="spendCent" name="spendCent" min="0" value="">
+        <br>
+        <br>
+        <p><input type="submit" /></p>
+    </form>
+
+</body>
+</html>
+
